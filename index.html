@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<center>
+			<div id="title">
+				<h1>Mastermind Game</h1>
+			</div>
+			<div id="choice">
+				<select name="niveau" id="niveau">
+				    <option value="EASY" selected >Debutant</option>
+				    <option value="MEDIUM">moyen</option>
+				    <option value="HARD">confirmé</option>
+				</select>
+			</div>
+			<div id="validation">
+				<input class="btn-secondary" id="new-game-btn" type="button" name="nouveau" value="Nouvelle partie">
+			</div>
+			<div id="pawn-box">	
+				<!--
+					<div class="pawn"></div>
+				-->
+			</div>
+			<div id="gaming">
+				<input id="play_btn" class="btn-success" type="button" name="nouveau" value="Jouer">
+			</div>
+			<div id="grid-game">
+				<!-- 
+					<div class="grid-game-row">
+						<div class="grid-game-row-left">
+							<div class="pawn-container"></div>
+						</div>
+						<div class="grid-game-row-rigth">		
+							<div class="position-check"></div>
+						</div>	
+					</div>
+				-->
+			</div>
+		</center>
+	</div>
+	<script type="text/javascript" src="global.js"></script>
+	<script type="text/javascript" src="Pawn.js"></script>
+	<script type="text/javascript" src="Pawnbox.js"></script>
+	<script type="text/javascript" src="PawnContainer.js"></script>
+	<script type="text/javascript" src="GridGameRow.js"></script>
+	<script type="text/javascript" src="GridGame.js"></script>
+	<script type="text/javascript" src="style.js"></script>
+
+</body>
+</html>
