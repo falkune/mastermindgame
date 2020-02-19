@@ -62,11 +62,11 @@ class PawnContainer{
                                         this.elmt.style.backgroundColor = selectedColor;
             
                                     }
-                                   /*  else{
+                                //    else{
 
-                                        alert("yess!!");
+                                //         alert("yess!!");
 
-                                    } */
+                                //     }
 
                                 }
                                 else{

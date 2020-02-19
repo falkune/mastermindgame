@@ -20,5 +20,7 @@ class Pawn {
             selectedColor = this.nodeValue;
 
         });
+        
     }
+
 }

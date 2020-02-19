@@ -6,7 +6,7 @@ class PawnBox {
         this.elt = document.querySelector('#' + eltId);
         this.pushPawns();
         this.clickedPawn = null;
-
+    
     }
 
     pushPawns() {
@@ -20,13 +20,16 @@ class PawnBox {
                 if (this.clickedPawn) {
 					
                     this.clickedPawn.style.boxShadow = null;
+
                 }
 
                 this.clickedPawn = e.target;
                 e.target.style.boxShadow = 'none';
 
-            }); 
+            });
+
         }); 
     
     }
+
 }
