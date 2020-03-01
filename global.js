@@ -1,5 +1,3 @@
-const GRIDGAME = document.querySelector('#grid-game');
-const GRIDROW = [];
 /*
 les variables suivant representent:
 nbPawns => le nombre de pions d'une rangée de la grille de jeux
@@ -11,6 +9,9 @@ number0fPawnToGame =>controle que touts les cases d'une rangée sont jouées ava
 selectedColor => couleur du pion selectionner dans la boite à outil
 endGame => controle la partie
 */
+
+const GRIDGAME = document.querySelector('#grid-game');
+const GRIDROW = [];
 
 let nbPawns = 0;
 let nbAttempts = 0;

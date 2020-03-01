@@ -1,14 +1,36 @@
+#container{
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: space-around; */
+    width: 80%;
+}
+
+#title h1{
+    text-align: center;
+}
+
+#choice{
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
 select{
     height: 40px;
-    width: 150px;
+    width: 100%;
     padding-left: 10px;
 }
 #new-game-btn{
     height: 50px;
-    width: 250px;
+    width: 100%;
 }
 #validation{
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
 #pawn-box{
     margin-top: 20px;
@@ -20,6 +42,8 @@ select{
     justify-content: space-between;
     flex-wrap: wrap;
     border: solid 2px black;
+    margin-left: auto;
+    margin-right: auto;
 }
 .pawn{
     height: 45px;
@@ -32,6 +56,9 @@ select{
 }
 #gaming{
     margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
 }
 #grid-game{
     width: 75%;
@@ -82,5 +109,7 @@ select{
 }
 #play_btn{
     height: 45px;
-    width: 90px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
