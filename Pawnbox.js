@@ -1,35 +1,33 @@
 /*class qui permet d'instancier tout les pion dans leur conteneur*/
 class PawnBox {
     
-    constructor(eltId) {
+  constructor(eltId) {
 
-        this.elt = document.querySelector('#' + eltId);
-        this.pushPawns();
-        this.clickedPawn = null;
+    this.elt = document.querySelector('#' + eltId);
+    this.pushPawns();
+    this.clickedPawn = null;
     
-    }
+  }
 
-    pushPawns() {
+  pushPawns() {
         
-        PAWNS_COLOR.forEach(color => {
+    PAWNS_COLOR.forEach(color => {
             
-            const pawn = new Pawn(color, this.elt);
+      const pawn = new Pawn(color, this.elt);
             
-            pawn.elt.addEventListener('click', e => {
+      pawn.elt.addEventListener('click', e => {
 
-                if (this.clickedPawn) {
-					
-                    this.clickedPawn.style.boxShadow = null;
+        if(this.clickedPawn) {
+          this.clickedPawn.style.boxShadow = null;
+        }
 
-                }
+        this.clickedPawn = e.target;
+        e.target.style.boxShadow = 'none';
+        
+      });
 
-                this.clickedPawn = e.target;
-                e.target.style.boxShadow = 'none';
-
-            });
-
-        }); 
+    }); 
     
-    }
+  }
 
 }

@@ -13,7 +13,6 @@ class GridGame{
 		
 	}
 
-
 	drawInit(ParentId, levelChoice){
 
 		this.elt.innerHTML = '';
@@ -21,41 +20,34 @@ class GridGame{
 		nbAttempts = LEVELS[levelChoice].nbAttempts;
 		nbPawns    = LEVELS[levelChoice].nbPawns;
 
-		const PAWN_CONTAINER_COLOR = shuffle(PAWNS_COLOR);
-		const COMBINATION = [];
+		const PAWN_CONTAINER_COLOR = shuffle(PAWNS_COLOR);//melange aleatoirement le tb PAWNS_COLOR
+		// const COMBINATION = [];//combinaison à trouver
 		
 		for(let j = 0; j < nbPawns; j++){
-
 			COMBINATION[j] = PAWN_CONTAINER_COLOR[j];
-
 		}
 		
-		nbrOfCurentrow = 0;
+		nbrOfCurentrow = 0;//le numero de la ligne courante sur laquelle on peut jouer
 
 		for(let i = 0; i < nbAttempts; i++){
-
-			GRIDROW[i] = new GridGameRow(ParentId, nbPawns, COMBINATION);
-
+			GRIDROW[i] = new GridGameRow(ParentId, COMBINATION);
 		}
 
 		number0fPawnToGame = 0;
 		found = 0;
-        endGame = false;
-        win = false;
+    endGame = false;
+    win = false;
 		curentrow = GRIDROW[nbrOfCurentrow];
 		curentrow.elt.style.opacity = 1;
 		curentrow.elt.id = "active";
 
 	} 
+
 }
 
 function shuffle(array){
-
-    return array.sort(function() {
-
+  return array.sort(function() {
 		return Math.random() - .5 ;
-		
 	});
-	
 }
 

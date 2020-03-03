@@ -21,86 +21,29 @@ class PawnContainer{
 			if(endGame == true){
 				if(win == true)
 					alert("Partie terminée!!!\n Vous avez gagner...");
-				
 				else
-					alert("Partie terminée!!!\n Vous avez perdu...");
-				
+					alert("Partie terminée!!!\n Vous avez perdu...");	
 			}
-
 			else{
-
 				if(selectedColor != null){
-
 					if(this.elmt.parentNode.parentNode.id == "active"){
-	
 						if(this.elmt.id != "played"){
-							
 							this.value = selectedColor;
 							this.elmt.id = "played";
 							this.elmt.style.backgroundColor = selectedColor;
 							number0fPawnToGame ++;
-							
-
-							if(this.nodeValue == selectedColor){ 
-
-								found ++;
-								//alert("yess!!");
-	
-							}
-	
 						}
 						else{
-							
-							if(window.confirm("voullez vous changer la couleur?")){
-	
-								if(this.value == this.nodeValue){
-
-									if(this.nodeValue != selectedColor){ 
-
-										this.value = this.selectedColor;
-										found --;
-										this.elmt.style.backgroundColor = selectedColor;
-			
-									}
-								//    else{
-
-								//         alert("yess!!");
-
-								//     }
-
-								}
-								else{
-
-									if(this.nodeValue == selectedColor){ 
-
-										this.value = selectedColor;
-										found ++;
-										this.elmt.style.backgroundColor = selectedColor;
-										//alert("yess!!");
-			
-									}
-									else{
-
-										this.value = selectedColor;
-										this.elmt.style.backgroundColor = selectedColor;
-
-									}
-
-								}
-
-							}
+							this.elmt.style.backgroundColor = selectedColor;
 						}
-	
 					}
 					else if(this.elmt.parentNode.parentNode.id == "already-play")
 						alert('mauvaise rangée!!!');
 					else
 						alert('mauvaise rangée!!!');
-					
 				}
 				else
 					alert("selectionner une couleur!!!");
-
 			}
 
 		});
@@ -111,11 +54,11 @@ class PawnContainer{
 
 class checkPosition{
 
-	constructor(ParentElt){
+	constructor(ParentElt, color){
 
 		this.elt = document.createElement('div');
 		this.elt.className = 'position-check';
-
+		
 		ParentElt.appendChild(this.elt);
 
 	}

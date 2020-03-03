@@ -62,10 +62,11 @@ select{
 }
 #grid-game{
     width: 75%;
-   /*  margin-top: 20px; */
     border-radius: 15px;
     padding-bottom: 15px;
     padding-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .grid-game-row{
     height: 50px;
@@ -76,6 +77,8 @@ select{
     justify-content: space-between;
     border-radius: 8px;
     opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
 }
 .pawn-container{
     margin-top: 2px;

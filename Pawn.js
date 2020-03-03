@@ -15,10 +15,8 @@ class Pawn {
      
         ParentElt.appendChild(this.elt);
 
-        this.elt.addEventListener('click', e => {
-            
+        this.elt.addEventListener('click', e => { 
             selectedColor = this.nodeValue;
-
         });
         
     }

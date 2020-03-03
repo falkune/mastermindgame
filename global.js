@@ -12,6 +12,7 @@ endGame => controle la partie
 
 const GRIDGAME = document.querySelector('#grid-game');
 const GRIDROW = [];
+const COMBINATION = [];
 
 let nbPawns = 0;
 let nbAttempts = 0;
@@ -24,19 +25,19 @@ let endGame = false;
 let win = false;
 
 
-const PAWNS_COLOR = ['DeepSkyBLue', 'purple', 'yellow', 'DarkOrange', 'red', 'SpringGreen'];
+const PAWNS_COLOR = ['deepskyblue', 'purple', 'yellow', 'darkorange', 'red', 'springgreen'];
 
 const LEVELS = {
-    EASY : {
-        nbPawns : 4, 
-        nbAttempts : 7
-    },
-    MEDIUM : {
-        nbPawns : 5,
-        nbAttempts : 6
-    },
-    HARD : {
-        nbPawns : 6,
-        nbAttempts : 6
-    }
+  EASY : {
+    nbPawns : 4, 
+    nbAttempts : 7
+  },
+  MEDIUM : {
+    nbPawns : 5,
+    nbAttempts : 6
+  },
+  HARD : {
+    nbPawns : 6,
+    nbAttempts : 6
+  }
 }
