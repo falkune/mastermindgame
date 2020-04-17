@@ -12,7 +12,7 @@ endGame => controle la partie
 
 const GRIDGAME = document.querySelector('#grid-game');
 const GRIDROW = [];
-const COMBINATION = [];
+var COMBINATION = [];
 
 let nbPawns = 0;
 let nbAttempts = 0;

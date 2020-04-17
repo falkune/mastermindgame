@@ -9,6 +9,8 @@ class PawnContainer{
 
 	constructor(ParentElt, color){
 
+		ParentElt.innertHTML = "";
+
 		this.elmt = document.createElement('div');
 		this.elmt.className = 'pawn-container';
 		ParentElt.appendChild(this.elmt);

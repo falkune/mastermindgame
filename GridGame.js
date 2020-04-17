@@ -15,18 +15,21 @@ class GridGame{
 
 	drawInit(ParentId, levelChoice){
 
-		this.elt.innerHTML = '';
+		ParentId.innerHTML = '';
 
 		nbAttempts = LEVELS[levelChoice].nbAttempts;
 		nbPawns    = LEVELS[levelChoice].nbPawns;
 
-		const PAWN_CONTAINER_COLOR = shuffle(PAWNS_COLOR);//melange aleatoirement le tb PAWNS_COLOR
-		// const COMBINATION = [];//combinaison à trouver
+		const PAWN_CONTAINER_COLOR = shuffle(PAWNS_COLOR);
+
+		COMBINATION = [];
+		
 		
 		for(let j = 0; j < nbPawns; j++){
 			COMBINATION[j] = PAWN_CONTAINER_COLOR[j];
 		}
 		
+
 		nbrOfCurentrow = 0;//le numero de la ligne courante sur laquelle on peut jouer
 
 		for(let i = 0; i < nbAttempts; i++){

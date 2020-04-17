@@ -6,10 +6,10 @@ new PawnBox('pawn-box');
 
 newGameBtn.addEventListener('click', () => {   
 
-  if (window.confirm('voulez vous commencer une partie ?')){
+ 
     const levelChoice = document.querySelector('#niveau').value;
     new GridGame('grid-game', levelChoice);
-  }
+  
 
 });
 

@@ -22,7 +22,7 @@ class PawnBox {
         }
 
         this.clickedPawn = e.target;
-        e.target.style.boxShadow = 'none';
+        e.target.style.boxShadow = "0px 1px 10px 10px";
         
       });
 
